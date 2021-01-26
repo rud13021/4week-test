@@ -1,0 +1,36 @@
+/*
+<div class="wrap">
+    <div class="box">
+        <div class="item"></div>
+    </div>
+</div>
+*/
+
+.wrap {
+    background-color: blanchedalmond;
+    height: 500vh;
+    /* vh 100vh 전체 브라우저 크기 기준 500vh는 5배*/
+    /* position: relative; */
+}
+
+.box {
+    background-color: gray;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    /* sticky이 기본값 정적 top이랑 left 안먹음*/
+    /* position: absolute; -> 계산을 한 후에 부모를 기준으로 이동 */
+    /* position: relative; -> 원래있던 sticky를 기준으로 이동 */
+    /* position: fixed; -> 윈도우를 기준으로 상대적으로 이동 */
+    /* position: sticky; -> 바로 직계 부모를 기준으로 원래 있던 자리에 붙어있는다. */
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    background-color: skyblue;
+    width: 100px;
+    height: 100px;
+}
